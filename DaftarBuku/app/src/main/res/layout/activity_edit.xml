@@ -1,0 +1,86 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".EditActivity">
+
+    <EditText
+        android:id="@+id/edit_judul"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Judul Buku"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/edittextstyle"/>
+
+    <EditText
+        android:id="@+id/edit_deskripsi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi Buku"
+        android:minLines="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_judul"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:background="@drawable/edittextstyle"/>
+
+    <EditText
+        android:id="@+id/edit_penulis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Penulis Buku"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_deskripsi"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittextstyle"/>
+
+    <EditText
+        android:id="@+id/edit_penerbit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Penerbit Buku"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_penulis"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittextstyle"/>
+
+    <EditText
+        android:id="@+id/edit_tahun"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tahun Terbit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_penerbit"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittextstyle"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_tahun"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_save"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
